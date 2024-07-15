@@ -7,7 +7,9 @@ function App() {
   const [count, setCount] = useState(0);
   const [d, sd] = useState("default");
   async function getData() {
-    const res = await axios.get("https://testdeploy-wheat-one.vercel.app/data");
+    const res = await axios.get(
+      "https://testdeploy-wheat-one.vercel.app/api/data"
+    );
     sd(res.data.a);
   }
   useEffect(() => {
