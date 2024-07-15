@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 app.get("/data", (req, res) => {
   res.send({ data: "data" });
 });
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log("listening at port ", port);
 });
