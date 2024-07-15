@@ -9,6 +9,9 @@ app.get("/", (req, res) => {
 app.get("/data", (req, res) => {
   res.send({ a: "adta" });
 });
+app.get("/test", (req, res) => {
+  res.send("test");
+});
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log("listening at port ", port);
