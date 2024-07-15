@@ -16,12 +16,8 @@
   ],
   "routes": [
     {
-      "src": "/data",
-      "dest": "/backend/server.js"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/frontend/$1"
+      "dest": "/backend/server.js"
     }
   ]
 }
