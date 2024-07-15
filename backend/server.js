@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.send("sdasd");
 });
 app.get("/data", (req, res) => {
-  res.send({ data: "data" });
+  res.send({ a: "adta" });
 });
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
